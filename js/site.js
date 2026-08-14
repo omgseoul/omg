@@ -2,7 +2,7 @@ const properties = {
   seoul: { name: '서울역점', english: 'SEOUL STATION', area: '서울역', tagline: '서울의 시작과 끝이 가장 편안하도록', description: '서울 어디든 빠르게 이어지는 서울역 인근에서 여행의 설렘과 편안한 휴식을 모두 누려보세요.', room: '스탠다드 더블', guests: '기준 2인 · 최대 2인', address: '서울특별시 용산구 서울역 인근', accent: '#abc8b8', bookingUrl: '' },
   jongno: { name: '종로점', english: 'JONGNO', area: '종로', tagline: '오래된 서울의 시간을 가까이에서', description: '고궁과 한옥 골목, 감각적인 가게가 공존하는 종로에서 천천히 서울의 매력을 발견해 보세요.', room: '디럭스 트윈', guests: '기준 2인 · 최대 3인', address: '서울특별시 종로구 종로 인근', accent: '#e8c6ad', bookingUrl: '' },
   hongdae: { name: '홍대점', english: 'HONGDAE', area: '홍대', tagline: '도시의 에너지를 즐기는 가장 좋은 방법', description: '음악과 예술, 다채로운 맛이 밤낮없이 이어지는 홍대 중심에서 자유로운 여행을 시작하세요.', room: '패밀리 스튜디오', guests: '기준 3인 · 최대 4인', address: '서울특별시 마포구 홍대입구역 인근', accent: '#d8e681', bookingUrl: '' },
-  myeongdong: { name: '명동점', english: 'MYEONGDONG', area: '명동', tagline: '서울의 중심에서 누리는 여유', description: '쇼핑과 미식, 남산의 풍경까지 도보로 만나는 명동에서 알찬 서울 여행을 완성해 보세요.', room: '슈페리어 더블', guests: '기준 2인 · 최대 2인', address: '서울특별시 중구 명동역 인근', accent: '#b7bdd7', bookingUrl: '' }
+  myeongdong: { name: '명동점', english: 'MYEONGDONG', area: '명동', tagline: '서울의 중심에서 누리는 여유', description: '쇼핑과 미식, 남산의 풍경까지 도보로 만나는 명동에서 알찬 서울 여행을 완성해 보세요.', room: '슈페리어 더블', guests: '기준 2인 · 최대 2인', address: '서울특별시 중구 명동역 인근', accent: '#b7bdd7', bookingUrl: 'https://beds24.com/booking2.php?propid=329251' }
 };
 
 function propertyTemplate(p) {
@@ -29,7 +29,7 @@ document.addEventListener('click', (event) => {
   const button = event.target.closest('.booking-button');
   if (!button) return;
   const url = button.dataset.bookingUrl;
-  if (url) window.location.href = url;
+  if (url) window.open(url, '_blank', 'noopener,noreferrer');
   else {
     const note = button.nextElementSibling;
     note.classList.add('show');
