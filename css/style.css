@@ -17,3 +17,43 @@
 @media(max-width:480px){
   .hero{grid-template-columns:1fr 112px}.hero h1{font-size:36px}.hero-visual{height:205px}.hero-visual>p{font-size:8px}.section-heading>p{display:none}.about>div{grid-template-columns:1fr 1.1fr}.property-gallery{height:150px}.property-content{gap:16px}
 }
+
+/* Exact compact mobile layout (390px reference viewport) */
+@media(max-width:480px){
+  .site-header{height:56px;max-height:64px;padding-inline:18px}
+  .hero{grid-template-columns:minmax(0,1fr) 112px;padding:32px 18px;gap:14px;align-items:center}
+  .hero h1{font-size:36px;line-height:1.08;letter-spacing:-2px}
+  .hero-lead{font-size:13px;line-height:1.45;margin:14px 0 18px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .hero .button{height:52px;padding:0 14px;gap:10px}
+  .hero-visual{height:205px;max-height:220px}
+
+  .locations{padding:32px 18px}
+  .section-heading{margin-bottom:18px}
+  .location-grid{display:grid;grid-template-columns:1fr;gap:10px}
+  .location-row{height:72px;min-height:72px;display:grid;grid-template-columns:minmax(0,68fr) minmax(0,32fr);gap:8px;background:transparent}
+  .location-detail,.location-book{height:72px;padding:0 14px;border-radius:8px;font-size:16px}
+  .location-detail{background:var(--location-color);line-height:1.15}
+  .card-seoul{--location-color:#a8c8b9}.card-jongno{--location-color:#e8c6ad}.card-hongdae{--location-color:#d8e681}.card-myeongdong{--location-color:#b7bdd7}
+  .location-detail small{display:block;font-size:9px;line-height:1.2;letter-spacing:1.4px;margin:5px 0 0}
+  .location-book{background:var(--green);color:#fff;font-size:16px;font-weight:700;border:1px solid var(--green);white-space:nowrap}
+
+  .about{height:auto;max-height:300px;padding:32px 18px}
+  .about>div{display:block}
+  .about h2{font-size:27px;line-height:1.2}
+  .about>div p{margin-top:14px;font-size:12px;line-height:1.5;max-width:100%;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .about ul{display:none}
+  footer{min-height:0;max-height:150px;padding:22px 18px;gap:6px}
+
+  .property-hero{padding:24px 18px 20px}
+  .property-gallery{height:180px;max-height:220px}
+  .property-content{padding:20px 18px 28px;gap:16px}
+  .property-subtitle p,.stay-intro>p:last-child{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .booking-card{padding:14px}
+  .booking-button{height:56px;padding:0 14px}
+  .info-section{padding:14px 0}
+  .room-card{display:grid;grid-template-columns:1fr 1fr;padding:10px 12px}
+  .amenities{grid-template-columns:repeat(2,1fr)}
+  .amenities li{padding:8px 7px}
+  .time-grid{grid-template-columns:1fr 1fr}
+  .map{height:120px;max-height:180px}
+}
