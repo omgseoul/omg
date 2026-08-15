@@ -1,54 +1,41 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="서울역, 종로, 홍대, 명동에서 만나는 편안한 서울 스테이, OMG SEOUL">
-  <title>OMG SEOUL | 서울에서 만나는 나만의 스테이</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/site.js" defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Comfortable Seoul stays near Seoul Station, Jongno, Hongdae and Myeongdong.">
+  <title>OMG SEOUL | Your place in Seoul</title>
+  <link rel="stylesheet" href="css/style.css"><script src="js/site.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="OMG SEOUL 홈"><span>OMG</span> SEOUL</a>
-    <nav aria-label="주요 메뉴">
-      <a href="#locations">지점 찾기</a><a href="#about">브랜드 소개</a>
-    </nav>
+    <a class="brand" href="index.html" aria-label="OMG SEOUL home"><span>OMG</span> SEOUL</a>
+    <div class="language-picker" data-language-picker></div>
   </header>
-
   <main>
     <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">YOUR PLACE IN SEOUL</p>
-        <h1>서울의 오늘을<br><em>가장 편안하게.</em></h1>
-        <p class="hero-lead">취향에 맞는 동네를 고르면,<br>편안한 서울의 하루가 시작됩니다.</p>
-        <a class="button button-dark" href="#locations">머물 곳 둘러보기 <span>↘</span></a>
-      </div>
-      <div class="hero-visual" role="img" aria-label="햇살이 드는 OMG SEOUL 객실 일러스트">
-        <div class="sun"></div><div class="window"></div><div class="bed"><span></span></div>
-        <p>STAY<br>BRIGHT</p>
-      </div>
+      <div class="hero-copy"><p class="eyebrow" data-i18n="hero.eyebrow"></p><h1 data-i18n-html="hero.title"></h1><p class="hero-lead" data-i18n-html="hero.lead"></p></div>
+      <div class="hero-visual" role="img" data-i18n-aria="hero.visualAria"><div class="sun"></div><div class="window"></div><div class="bed"><span></span></div><p>STAY<br>BRIGHT</p></div>
     </section>
-
     <section class="locations section" id="locations">
-      <div class="section-heading">
-        <div><p class="eyebrow">OUR LOCATIONS</p><h2>어느 서울에<br>머물러 볼까요?</h2></div>
-        <p>교통이 편리한 서울역부터 오래된 골목이 아름다운 종로,<br>활기찬 홍대와 쇼핑의 중심 명동까지.</p>
-      </div>
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="locations.eyebrow"></p><h2 data-i18n-html="locations.title"></h2></div><p data-i18n-html="locations.description"></p></div>
       <div class="location-grid">
-        <div class="location-row card-seoul"><a class="location-detail" href="seoul-station.html"><span>서울역<small>SEOUL STATION</small></span><b>→</b></a><a class="location-book" href="https://beds24.com/booking2.php?propid=257061" target="_blank" rel="noopener noreferrer">예약하기</a></div>
-        <div class="location-row card-jongno"><a class="location-detail" href="jongno.html"><span>종로<small>JONGNO</small></span><b>→</b></a><a class="location-book" href="https://beds24.com/booking2.php?propid=263294" target="_blank" rel="noopener noreferrer">예약하기</a></div>
-        <div class="location-row card-hongdae"><a class="location-detail" href="hongdae.html"><span>홍대<small>HONGDAE</small></span><b>→</b></a><a class="location-book" href="https://beds24.com/booking2.php?propid=263281" target="_blank" rel="noopener noreferrer">예약하기</a></div>
-        <div class="location-row card-myeongdong"><a class="location-detail" href="myeongdong.html"><span>명동<small>MYEONGDONG</small></span><b>→</b></a><a class="location-book" href="https://beds24.com/booking2.php?propid=329251" target="_blank" rel="noopener noreferrer">예약하기</a></div>
+        <div class="location-row card-seoul"><div class="location-name"><strong data-i18n="properties.seoul.area"></strong><small>SEOUL STATION</small></div><a class="location-detail" href="seoul-station.html" data-i18n="actions.view"></a><a class="location-book" href="https://beds24.com/booking2.php?propid=257061" target="_blank" rel="noopener noreferrer" data-i18n="actions.book"></a></div>
+        <div class="location-row card-jongno"><div class="location-name"><strong data-i18n="properties.jongno.area"></strong><small>JONGNO</small></div><a class="location-detail" href="jongno.html" data-i18n="actions.view"></a><a class="location-book" href="https://beds24.com/booking2.php?propid=263294" target="_blank" rel="noopener noreferrer" data-i18n="actions.book"></a></div>
+        <div class="location-row card-hongdae"><div class="location-name"><strong data-i18n="properties.hongdae.area"></strong><small>HONGDAE</small></div><a class="location-detail" href="hongdae.html" data-i18n="actions.view"></a><a class="location-book" href="https://beds24.com/booking2.php?propid=263281" target="_blank" rel="noopener noreferrer" data-i18n="actions.book"></a></div>
+        <div class="location-row card-myeongdong"><div class="location-name"><strong data-i18n="properties.myeongdong.area"></strong><small>MYEONGDONG</small></div><a class="location-detail" href="myeongdong.html" data-i18n="actions.view"></a><a class="location-book" href="https://beds24.com/booking2.php?propid=329251" target="_blank" rel="noopener noreferrer" data-i18n="actions.book"></a></div>
       </div>
     </section>
-
     <section class="about section" id="about">
-      <p class="eyebrow">ABOUT OMG SEOUL</p>
-      <div><h2>낯선 도시에서도<br>내 집처럼 편안하게</h2><p>좋은 위치와 꼭 필요한 편의, 기분 좋은 디자인.<br>서울을 온전히 즐기도록 머무는 시간을 세심하게 채웁니다.</p></div>
-      <ul><li><strong>4</strong><span>SEOUL LOCATIONS</span></li><li><strong>24/7</strong><span>GUEST SUPPORT</span></li><li><strong>100%</strong><span>LOCAL EXPERIENCE</span></li></ul>
+      <div class="about-copy"><p class="eyebrow">ABOUT OMG SEOUL</p><h2 data-i18n-html="about.title"></h2><p data-i18n="about.description"></p><ul><li><strong>4</strong><span data-i18n="about.locations"></span></li><li><strong>24/7</strong><span data-i18n="about.support"></span></li><li><strong>100%</strong><span data-i18n="about.local"></span></li></ul></div>
+      <div class="seoul-map" role="img" data-i18n-aria="map.aria">
+        <svg viewBox="0 0 620 360" aria-hidden="true"><path class="city-line" d="M25 85 C150 25 270 75 360 38 S540 55 600 20M12 280 C125 215 220 245 315 180 S490 165 615 100"/><path class="river" d="M-10 236 C105 185 185 268 300 226 S478 185 635 226"/><path class="river-edge" d="M-10 252 C105 201 185 284 300 242 S478 201 635 242"/></svg>
+        <p class="map-caption" data-i18n="map.caption"></p>
+        <div class="map-point hongdae"><i></i><strong>OMG House</strong><span data-i18n="map.hongdae"></span></div>
+        <div class="map-point seoul"><i></i><strong>Seoul Nest</strong><span data-i18n="map.seoul"></span></div>
+        <div class="map-point jonggak"><i></i><strong>One Minute Guesthouse</strong><span data-i18n="map.jonggak"></span></div>
+        <div class="map-point myeongdong"><i></i><strong>Lazybear</strong><span data-i18n="map.myeongdong"></span></div>
+      </div>
     </section>
   </main>
-  <footer><a class="brand" href="index.html"><span>OMG</span> SEOUL</a><p>서울의 좋은 순간이 시작되는 곳</p><small>© 2026 OMG SEOUL. All rights reserved.</small></footer>
-</body>
-</html>
+  <footer><a class="brand" href="index.html"><span>OMG</span> SEOUL</a><p data-i18n="footer.tagline"></p><small data-i18n="footer.copyright"></small></footer>
+</body></html>
